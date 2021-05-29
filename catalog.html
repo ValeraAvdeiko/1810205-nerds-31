@@ -7,29 +7,25 @@
   <body>
     <header class="header"> 
       <nav>
+      <a href="index.html"><img src="img/nerds-logo.svg" width="159.87" hight="65.02" alt="Логотип Nerds"></a>
       <ul>
-        <a href="index.html">
-        <img src="img/nerds-logo.svg" widt="159.87" hight="65.02" alt="Логотип Nerds">
-        </a>
-        <li><a href="blank.html">СТУДИЯ</a></li>
-        <li><a href="blank.html">КЛИЕНТЫ</a></li>
-        <li><a href="catalog.html">МАГАЗИН</a></li>
-        <li><a href="blank.html">КОНТАКТЫ</a></li>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
         </ul>
         <img src="img/cart-icon.svg" width="15" height="15 alt="Иконка корзины">
-        <a href=#>КОРЗИНА</a>
-        </hav>
+        <a href=#>Корзина</a>
+        </nav>
       </header>
     <main>
-      <section>
       <h1>Магазин готовых шаблонов</h1>
-      </section>
       <section class="filter">
         <h3>Фильтр товаров</h3>
-        <form action="ttps://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Стоимость:</legend>
-            <!--НЕ знаю как сделать ползунок-->
+            <!--Ползунок с ценой-->
             <label>от<input type="text" value="0"></label>
             <label>до<input type="text" value="15 000"></label>
           </fieldset>
@@ -51,7 +47,6 @@
           <li><input type="checkbox" name="cart" id="filter-cart"><label for="filter-cart">Корзина</label></li>
         </ul>
       </fieldset>
-      <!--Кнопка не работает?!-->
       <button type="submit">ПОКАЗАТЬ</button>      
         </form>
       </section>
@@ -62,45 +57,34 @@
           <li><a href="#">По типу</a></li>
           <li><a href="#">По названию</a></li>
         </ul>
-        <!--Не знаю как правильно сделать сортировку по возрастанию и убыванию стрелочками, пока вставил только иконки-->
         <ul>
-          <li><img src="img/icon-down-dir.png"></li>
-          <li><img src="img/icon-up-dir.png"></li>
+          <li><img src="img/icon-down-dir.png" alt=""></li>
+          <li><img src="img/icon-up-dir.png" alt=""></li>
         </ul>
       </section>
       <section>
         <h3>Каталог подходящих шаблонов</h3>
         <ul>
           <li>
-            <a href="catalog.html"> 
-            <p><img src="img/img-sedona 1.png" width="359" height="578" alt="Sedona"></p>
-            </a>
+            <p><img src="img/img-sedona-1.png" width="359" height="578" alt="Sedona"></p>
             <a href="#">Sedona</a>
             <p>Информационный сайт<br>для туристов</p>
             <button type="button">9900 руб.</button>
           </li>
           <li>
-            <a href="catalog.html"> 
-              <p><img src="img/img-pink 1.png" width="359" height="578" alt="Pink"></p>
-              </a>
+            <p><img src="img/img-pink-1.png" width="359" height="578" alt="Pink"></p>
               <a href="#">PINK APP</a>
               <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
               <button type="button">9900 руб.</button>
           </li>
-          <li>
-            <a href="catalog.html"> 
-              <p><img src="img/img-mishka 1.png" width="359" height="578" alt="Mishka"></p>
-              </a>
+          <li>            
+              <p><img src="img/img-mishka-1.png" width="359" height="578" alt="Mishka">
           </li>
           <li>
-            <a href="catalog.html"> 
-              <p><img src="img/img-aplus 1.png" width="359" height="578" alt="Aplus"></p>
-              </a>
+              <p><img src="img/img-aplus-1.png" width="359" height="578" alt="Aplus"></p>
           </li>
           <li>
-            <a href="catalog.html"> 
-            <p><img src="img/img-kvast 1.png" width="359" height="578" alt="Kvast"></p>
-            </a>
+            <p><img src="img/img-kvast-1.png" width="359" height="578" alt="Kvast"></p>
             <a href="#">КВАСТ</a>
             <p>Промо-сайт производителя<br>крафтового кваса</p>
             <button type="button">9900 руб.</button>
@@ -110,7 +94,7 @@
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
-          <li><button type="button">Следующая</button><li>
+          <li><a href="#">Следующая</a></li>
         </ul>
       </section>
       <section class="contacts">
@@ -125,14 +109,13 @@
     </main>
      
     <footer class="footer">
-      <uL>
-        <li><a href="#"><img src="img/vk-icon.png"></a></li>
-        <li><a href="#"><img src="img/fb-icon.png"></a></li>
-        <li><a href="#"><img src="img/insta-icon.png"></a></li>
-      </uL>
+      <ul>
+        <li><a href="#"><img src="img/vk-icon.png" alt=""></a></li>
+        <li><a href="#"><img src="img/fb-icon.png" alt=""></a></li>
+        <li><a href="#"><img src="img/insta-icon.png" alt=""></a></li>
+      </ul>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
     </body>
-    <!--Проверка-->
 </html>
