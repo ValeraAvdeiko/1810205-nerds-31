@@ -6,7 +6,7 @@
   --basic-black: #283136;
   --basic-white: #ffffff;
 }
-
+/*Все цвета занесу в боди в следующий раз*/
 body {
   min-width: 1157px;
   margin: 0;
@@ -344,4 +344,194 @@ img {
   vertical-align: middle;
   background-color: var(--basic-red);
   border: none;
+}
+
+.page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  background-color: var(--basic-gray);
+}
+
+.filter-form-cost-fieldset {
+  border: none;
+}
+
+.filter-cost {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-cost-from {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.filter-cost-from input {
+  background-color: var(--basic-gray);
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.filter-cost-to {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter-cost-to input {
+  background-color: var(--basic-gray);
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.filter-grid-fieldset {
+  border: none;
+}
+
+.filter-grid {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-grid-items {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+.filter-grid-items :hover {
+}
+
+/* Не знаю как прописать правило для заблокирован из стайл гайда
+.filter-grid-items:disabled {
+}
+*/
+
+.filter-features-fieldset {
+  border: none;
+}
+
+.filter-features {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-features-items {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+
+.filter-features-items :hover {
+}
+
+.filter-features-items :disabled {
+}
+
+.button-filter {
+  background-color: var(--basic-gray);
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.sort-definition {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sort-items {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+/*Не знаю как правильно прописать прозрачность при наведении и когда пункт выбран*/
+.sort-items :hover {
+  opacity: 0.6;
+}
+.sort-items :active {
+}
+
+.sort-arrows {
+  list-style: none;
+}
+
+.catalog-list {
+  list-style: none;
+  background-color: var(--basic-gray);
+}
+
+.catalog-item a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.catalog-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  text-align: center;
+}
+
+.button-catalog {
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.button-catalog :hover {
+  background-color: #E74246;
+}
+
+.button-catalog :active{
+  background-color: #D7373B;
+}
+
+.catalog-pages {
+  background-color: var(--basic-gray);
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+
 }
