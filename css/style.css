@@ -5,8 +5,19 @@
   --basic-yellow: #EFC849;
   --basic-black: #283136;
   --basic-white: #ffffff;
+  --dark-black: #000000;
+  --hover-red: #E74246;
+  --active-red: #D7373B;
+  --hover-green: #00BC6C;
+  --active-green: #00AA62;
+  --hover-yellow: #EAB534;
+  --active-yellow: #E5A722;
+  --gray: #666666;
+  --input-white: #D7DCDE;
+  --input-black: #444444;
+  --hover-white: #B4B9BB;
 }
-/*Все цвета занесу в боди в следующий раз*/
+
 body {
   min-width: 1157px;
   margin: 0;
@@ -17,6 +28,10 @@ body {
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -28,22 +43,63 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Main navigation */
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  color: #000000;
+  color: var(--dark-black);
   background-color: var(--basic-gray);
   text-transform: uppercase;
+  display: grid;
+  outline: 5px solid rgba(182, 228, 17, 0.3);
+  outline-offset: -5px;
+  width: 1160px;
+  grid-template-columns: 160px 1fr min-content;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.footer {
+  outline: 5px solid rgba(199, 34, 34, 0.3);
+  outline-offset: -5px;
+  display: grid;
+  width: 1060px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 139px;  
+}
+
+.main-header-logo {
+  outline: 5px solid rgba(38, 0, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .site-navigation {
   list-style: none;
+  outline: 5px solid rgba(47, 96, 119, 0.3);
+  outline-offset: -5px;
+  margin: 0;
+  padding: 0;
+}
+/*Задал ширину контейнера по ширине карты, не знаю правильно ли это*/
+.container {
+  outline: 5px solid rgba(47, 119, 57, 0.3);
+  outline-offset: -5px;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .site-navigation a {
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .site-navigation a:hover,
@@ -55,8 +111,12 @@ img {
   color: inherit;
 }
 
+.navigation-cart {
+  outline: 5px solid rgba(171, 189, 73, 0.3);
+  outline-offset: -5px;
+}
 .cart {
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .cart:hover,
@@ -68,9 +128,40 @@ img {
   color: inherit;
 }
 
-.slides {
+.slider {
   list-style: none;
   background-color: var(--basic-gray);
+  outline: 5px solid rgba(9, 121, 226, 0.3);
+  outline-offset: -5px;
+  width: 1157px;
+  margin-bottom: 80px;
+}
+
+.slide-1 {
+  outline: 5px solid rgba(245, 7, 7, 0.3);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: min-content 760px;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-2 {
+  outline: 5px solid rgba(245, 7, 7, 0.3);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: min-content 760px;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-3 {
+  outline: 5px solid rgba(245, 7, 7, 0.3);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: min-content 760px;
+  margin: 0;
+  padding: 0;
 }
 
 .slide-header-1 {
@@ -96,7 +187,7 @@ img {
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--basic-black);
   text-align: center;
   vertical-align: middle;
   background-color: var(--basic-red);
@@ -104,11 +195,28 @@ img {
 
 .button-slider:hover,
 .button-slider:focus {
-  background-color: #E74246;
+  background-color: var(--hover-red);
 }
 
 .button-slider:active {
-  background-color: #D7373B;
+  background-color: var(--active-red);
+}
+
+.services-list {
+  outline: 5px solid rgba(20, 197, 168, 0.3);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1100px;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  column-gap: 100px;
+}
+
+.services-list li {
+  outline: 5px solid rgba(20, 197, 168, 0.3);
+  outline-offset: -5px;
 }
 
 .services-list {
@@ -127,7 +235,7 @@ img {
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--basic-black);
   text-align: center;
   vertical-align: middle;
   background-color: var(--basic-red);
@@ -135,11 +243,11 @@ img {
 
 .services-button-red:hover,
 .services-button-red:focus {
-  background-color: #E74246;
+  background-color: var(--hover-red);
 }
 
 .services-button-red:active {
-  background-color: #D7373B;
+  background-color: var(--active-red);
 }
 
 .services-button-green {
@@ -147,7 +255,7 @@ img {
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--basic-black);
   text-align: center;
   vertical-align: middle;
   background-color: var(--basic-green);
@@ -155,11 +263,11 @@ img {
 
 .services-button-green:hover,
 .services-button-green:focus {
-  background-color: #00BC6C;
+  background-color: var(--hover-green);
 }
 
 .services-button-green:active {
-  background-color: #00AA62;
+  background-color: var(--active-green);
 }
 
 .services-button-yellow {
@@ -167,7 +275,7 @@ img {
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--basic-black);
   text-align: center;
   vertical-align: middle;
   background-color: var(--basic-yellow);
@@ -175,18 +283,28 @@ img {
 
 .services-button-yellow:hover,
 .services-button-yellow:focus {
-  background-color: #EAB534;
+  background-color: var(--hover-yellow);
 }
 
 .services-button-yellow:active {
-  background-color: #E5A722;
+  background-color: var(--active-yellow);
+}
+
+.about {
+  outline: 5px solid rgba(197, 171, 20, 0.3);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: min-content 360px;
+  column-gap: 149px;
+  width: 1174px;
+  margin-bottom: 73px;
 }
 
 .about-us {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .about-us-order {
@@ -201,14 +319,14 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--dark-black);
   }
 
 .accuracy-items-item {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
-  color: #000000;
+  color: var(--dark-black);
   list-style: none;
 }
 
@@ -216,7 +334,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .accuracy-definition {
@@ -226,32 +344,42 @@ img {
   color: var(--basic-black);
 }
 
+.companies-list {
+  outline: 5px solid rgba(107, 156, 116, 0.3);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 199px 209px 185px 173px;
+  width: 1159px;
+  margin-bottom: 44px;
+  list-style: none;
+}
+
 .contacts-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .cotacts-address {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #666666;
+  color: var(--gray);
 }
 
 .contacts-phone {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #666666;
+  color: var(--gray);
 }
 
 .button-writeus {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: var(--basic-black);
   text-align: center;
   vertical-align: middle;
   background-color: var(--basic-red);
@@ -261,85 +389,85 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .invitation-discount {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #444444;
+  color: var(--input-black);
 }
 
 .modal-header {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .form-name {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .form-name-input {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
-  border: 2px solid #D7DCDE;
+  color: var(--input-black);
+  border: 2px solid var(--input-white);
 }
 
 .form-name-input:hover {
-  border: 2px solid #B4B9BB;
+  border: 2px solid var(--hover-white);
 }
 
 .form-name-input:focus {
-  border: 2px solid #000000;
+  border: 2px solid var(--dark-black);
 }
 
 .form-name-input:invalid {
-  border: 2px solid #E74246;
+  border: 2px solid var(--hover-red);
 }
 
 .form-email {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .form-email-input {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
-  border: 2px solid #D7DCDE;
+  color: var(--input-black);
+  border: 2px solid var(--input-white);
 }
 
 .form-message {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .form-textarea-input {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
-  border: 2px solid #D7DCDE;
+  color: var(--input-black);
+  border: 2px solid var(--input-white);
 }
 
 .button-form-submit {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: var(--basic-black);
   text-align: center;
   vertical-align: middle;
   background-color: var(--basic-red);
@@ -350,7 +478,7 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  color: #000000;
+  color: var(--dark-black);
   background-color: var(--basic-gray);
 }
 
@@ -362,7 +490,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: var(--dark-black);
   text-transform: uppercase;
 }
 
@@ -401,7 +529,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: var(--dark-black);
   text-transform: uppercase;
 }
 
@@ -411,7 +539,7 @@ img {
   line-height: 20px;
   color: var(--basic-black);
 }
-.filter-grid-items :hover {
+.filter-grid-items:hover {
 }
 
 /* Не знаю как прописать правило для заблокирован из стайл гайда
@@ -427,7 +555,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: var(--dark-black);
   text-transform: uppercase;
 }
 
@@ -438,10 +566,10 @@ img {
   color: var(--basic-black);
 }
 
-.filter-features-items :hover {
+.filter-features-items:hover {
 }
 
-.filter-features-items :disabled {
+.filter-features-items:disabled {
 }
 
 .button-filter {
@@ -459,7 +587,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: var(--dark-black);
   text-transform: uppercase;
 }
 
@@ -468,15 +596,15 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
+  color: var(--dark-black);
   opacity: 0.3;
   text-transform: uppercase;
 }
 /*Не знаю как правильно прописать прозрачность при наведении и когда пункт выбран*/
-.sort-items :hover {
+.sort-items:hover {
   opacity: 0.6;
 }
-.sort-items :active {
+.sort-items:active {
 }
 
 .sort-arrows {
@@ -493,13 +621,13 @@ img {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--dark-black);
 }
 .catalog-item p {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #666666;
+  color: var(--gray);
   text-align: center;
 }
 
@@ -507,7 +635,7 @@ img {
   background-color: var(--basic-red);
   border: none;
   border-radius: 3px;
-  color: #FFFFFF;
+  color: var(--basic-black);
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -516,12 +644,12 @@ img {
   text-transform: uppercase;
 }
 
-.button-catalog :hover {
-  background-color: #E74246;
+.button-catalog:hover {
+  background-color: var(--hover-red);
 }
 
-.button-catalog :active{
-  background-color: #D7373B;
+.button-catalog:active {
+  background-color: var(--active-red);
 }
 
 .catalog-pages {
@@ -532,6 +660,6 @@ img {
   font-size: 16px;
   line-height: 18px;
   text-align: center;
-  color: #000000;
+  color: var(--dark-black);
 
 }

@@ -23,12 +23,14 @@
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
-      <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="">
-      <a class="cart" href=#>Корзина</a>
+        <div class="navigation-cart">
+        <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="">
+        <a class="cart" href=#>Корзина</a>
+        </div>
     </nav>
   </header>
   <main class="container">
-    <h1>Интернет магазин Nёrds</h1>
+    <h1 class="hidden">Интернет магазин Nёrds</h1>
     <section class="slider">
       <ul class="slides">
         <li class="slide-1">
@@ -57,7 +59,7 @@
       </ul>
     </section>
     <section class="services">
-      <h2>Услуги</h2>
+      <h2 class="hidden">Услуги</h2>
       <ul class="services-list">
         <li class="services-item sites">
           <img src="img/illustration-notebook.jpg" width="300" height="146" alt="">
@@ -80,7 +82,8 @@
       </ul>
     </section>
     <section class="about">
-      <h2>О нас</h2>
+      <h2 class="hidden">О нас</h2>
+      <div class="about-us-left">
       <p class="about-us">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</p>
       <p class="about-us-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше
         креатива. Работаем не покладая рук, как роботы.</p>
@@ -90,6 +93,8 @@
         <li class="about-serviveces-item">Мобильных приложений для iOS и Android</li>
         <li class="about-serviveces-item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
+      </div>
+      <div class="about-us-right">
       <img class="illustration-img" src="img/nerds-illustration-1.png" width="360" height="208" alt="">
       <p class="accuracy">с 2004 года Любим точность во всем:</p>
       <ul class="accuracy-items">
@@ -103,9 +108,10 @@
           <p class="accuracy-definition">Минимальная<br>предоплата</p>
         </li>
       </ul>
+      </div>
     </section>
     <section class="companies">
-      <h2>Компании</h2>
+      <h2 class="hidden">Компании</h2>
       <ul class="companies-list">
         <li class="companies-list htmlacademy"><a><img src="img/logo_htmlacademy-1.svg" width="199" height="57"
               alt=""></a></li>
@@ -116,7 +122,7 @@
       </ul>
     </section>
     <section class="contacts">
-      <h2>Контакты</h2>
+      <h2 class="hidden">Контакты</h2>
       <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
       <p class="cotacts-address">наб. Реки Карповки,<br>
         5 лит П, Санкт-Петербург<br>
@@ -133,8 +139,10 @@
       <li class="social fb"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt=""></a></li>
       <li class="social insta"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt=""></a></li>
     </ul>
+    <div class="footer-right">
     <p class="invitation">Давайте дружить, это выгодно!</p>
     <p class="invitation-discount">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
   <section class="modal">
     <h3 class="modal-header">Напишите нам</h3>
