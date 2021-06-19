@@ -25,14 +25,16 @@
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
-      <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="">
-      <a class="cart" href=#>Корзина</a>
+      <div class="navigation-cart">
+        <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="">
+        <a class="cart" href=#>Корзина</a>
+        </div>
     </nav>
   </header>
-  <main class="container">
+  <main class="container-catalog">
     <h1 class="page-title">Магазин готовых шаблонов</h1>
     <section class="filter">
-      <h3>Фильтр товаров</h3>
+      <h3 class="hidden">Фильтр товаров</h3>
       <form action="https://echo.htmlacademy.ru" method="post" class="filters-form">
         <fieldset class="filter-form-cost-fieldset">
           <legend class="filter-cost">Стоимость:</legend>
@@ -54,7 +56,7 @@
         <fieldset class="filter-features-fieldset">
           <legend class="filter-features">Особенности:</legend>
           <ul class="filter-features-items">
-            <li class="filter-features-item slider"><input type="checkbox" name="slider" id="filter-slider" checked><label
+            <li class="filter-features-item slider1"><input type="checkbox" name="slider" id="filter-slider" checked><label
                 for="filter-slider">Слайдер</label></li>
             <li class="filter-features-item block"><input type="checkbox" name="blockofadvantages" id="filter-blockofadvantages"><label
                 for="filter-blockofadvantages">Блок преимуществ</label></li>
@@ -70,6 +72,7 @@
     </section>
     <section class="sort">
       <h3 class="sort-definition">Сортировать:</h3>
+      <div class="sort-div"> <!--Не знаю нужен ли тут этот див!? решил добавить чтобы не городить огород с дополнительным гридом. Или лучше сделать 3-ех колоночный грид?-->
       <ul class="sort-items">
         <li class="sort-by-price"><a>По цене</a></li>
         <li class="sort-by-type"><a>По типу</a></li>
@@ -79,9 +82,10 @@
         <li class="sort-arrows up"></li>
         <li class="sort-arrows down"></li>
       </ul>
+      </div>
     </section>
     <section class="catalog">
-      <h3>Каталог подходящих шаблонов</h3>
+      <h3 class="hidden">Каталог подходящих шаблонов</h3>
       <ul class="catalog-list">
         <li class="catalog-item sedona">
           <p><img src="img/img-sedona-1.png" width="359" height="578" alt="sedona"></p>
@@ -127,7 +131,7 @@
         <li class="catalog-page next"><a href="#">Следующая</a></li>
       </ul>
     </section>
-    <section class="contacts">
+    <section class="contacts-catalog">
       <h2>Контакты</h2>
       <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
       <p class="cotacts-address">наб. Реки Карповки,<br>

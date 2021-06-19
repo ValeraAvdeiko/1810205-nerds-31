@@ -386,6 +386,11 @@ img {
   background-color: var(--basic-red);
 }
 
+.footer {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .invitation {
   font-weight: 700;
   font-size: 36px;
@@ -475,13 +480,33 @@ img {
   border: none;
 }
 
+.container-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  align-content: start;
+  outline: 5px solid rgba(143, 73, 139, 0.3);
+  outline-offset: -5px;
+
+}
+
+/*Не знаю как правильно поступить с заголовком каталога, может лучше его вывести из контейнера?*/
 .page-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: var(--dark-black);
   background-color: var(--basic-gray);
+  grid-column: 1/-1;
+  margin: 0;
+  margin-bottom: 163px;
+  text-align: center;
+  outline: 5px solid rgba(162, 187, 130, 0.3);
+  outline-offset: -5px;
 }
+
 
 .filter-form-cost-fieldset {
   border: none;
@@ -493,6 +518,31 @@ img {
   line-height: 30px;
   color: var(--dark-black);
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.sort-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 5px solid rgba(24, 36, 46, 0.3);
+  margin: 0;
+  padding: 0;
+}
+/*Не понимаю почему сьезжает вниз от верхнего грида*/
+.catalog {
+  grid-column: 2 / -1;
+  outline: 5px solid rgba(48, 180, 114, 0.3);
+  outline-offset: -5px;
+}
+
+.contacts-catalog {
+  grid-column: 1 / -1;
+}
+
+.filter {
+  outline: 5px solid rgba(96, 145, 89, 0.3);
+  outline-offset: -5px;
 }
 
 .filter-cost-from {
