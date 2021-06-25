@@ -483,16 +483,14 @@ img {
 .container-catalog {
   display: grid;
   grid-template-columns: 260px 1fr;
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
   align-content: start;
-  outline: 5px solid rgba(143, 73, 139, 0.3);
+  outline: 5px solid rgba(143, 73, 139, 0.3); /* Дмитрий, я же потом уберу рамки, зачем использовать кастомные свойства для цветов рамки?*/
   outline-offset: -5px;
-
 }
 
-/*Не знаю как правильно поступить с заголовком каталога, может лучше его вывести из контейнера?*/
 .page-title {
   font-weight: 500;
   font-size: 55px;
@@ -522,13 +520,6 @@ img {
   margin: 0;
 }
 
-.sort-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  outline: 5px solid rgba(24, 36, 46, 0.3);
-  margin: 0;
-  padding: 0;
-}
 /*Не понимаю почему сьезжает вниз от верхнего грида*/
 .catalog {
   grid-column: 2 / -1;
@@ -593,12 +584,6 @@ img {
 .filter-grid-items:hover {
 }
 
-/* Не знаю как прописать правило для заблокирован из стайл гайда
-Я имел в виду, что в стайл гайде есть вариант отоброжения - заблокирован. Какое правило нужно прописать? disabled?
-.filter-grid-items:disabled {
-}
-*/
-
 .filter-features-fieldset {
   border: none;
 }
@@ -633,6 +618,14 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+}
+
+.sort {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 5px solid rgba(24, 36, 46, 0.3);
+  margin: 0;
+  padding: 0;
 }
 
 .sort-definition {
