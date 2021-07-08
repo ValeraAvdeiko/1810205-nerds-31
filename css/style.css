@@ -59,25 +59,20 @@ img {
   color: var(--dark-black);
   background-color: var(--basic-gray);
   text-transform: uppercase;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   outline: 5px solid rgba(182, 228, 17, 0.3);
   outline-offset: -5px;
   width: 1160px;
-  grid-template-columns: 160px 1fr min-content;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.footer {
-  outline: 5px solid rgba(199, 34, 34, 0.3);
-  outline-offset: -5px;
-  display: grid;
-  width: 1060px;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 139px;
-}
-
 .main-header-logo {
+  width: 160px;
+  height: 65px;
   outline: 5px solid rgba(38, 0, 255, 0.3);
   outline-offset: -5px;
 }
@@ -86,6 +81,7 @@ img {
   list-style: none;
   outline: 5px solid rgba(47, 96, 119, 0.3);
   outline-offset: -5px;
+  width: 650px;
   margin: 0;
   padding: 0;
 }
@@ -93,10 +89,10 @@ img {
 .container {
   outline: 5px solid rgba(47, 119, 57, 0.3);
   outline-offset: -5px;
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
-  }
+}
 
 .site-navigation a {
   color: var(--dark-black);
@@ -114,6 +110,7 @@ img {
 .navigation-cart {
   outline: 5px solid rgba(171, 189, 73, 0.3);
   outline-offset: -5px;
+  max-width: 170px;
 }
 .cart {
   color: var(--dark-black);
@@ -191,6 +188,8 @@ img {
   text-align: center;
   vertical-align: middle;
   background-color: var(--basic-red);
+  width: 240px;
+  height: 50px;
 }
 
 .button-slider:hover,
@@ -205,22 +204,19 @@ img {
 .services-list {
   outline: 5px solid rgba(20, 197, 168, 0.3);
   outline-offset: -5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   width: 1100px;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
-  column-gap: 100px;
+  list-style: none;
+  justify-content: space-between;
 }
 
 .services-list li {
   outline: 5px solid rgba(20, 197, 168, 0.3);
   outline-offset: -5px;
-}
-
-.services-list {
-  list-style: none;
+  width: 300px;
 }
 
 .services-list h3 {
@@ -344,15 +340,23 @@ img {
   color: var(--basic-black);
 }
 
-/* Я не понимаю почему у меня тут отображается 8 колонок вместо 4-ех*/
-.companies-list {
+.companies {
   outline: 5px solid rgba(107, 156, 116, 0.3);
   outline-offset: -5px;
-  display: grid;
-  grid-template-columns: 199px 209px 185px 173px;
+  display: flex;
   width: 1159px;
   margin-bottom: 44px;
+
+}
+
+.companies-list {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Я не знаю почему, но не реагирует на джастифай контент никак*/
+  outline: 5px solid rgba(199, 240, 153, 0.3);
+  outline-offset: -5px;
+  margin: 0 10px;
 }
 
 .contacts-title {
@@ -387,8 +391,22 @@ img {
 }
 
 .footer {
+  outline: 5px solid rgba(199, 34, 34, 0.3);
+  outline-offset: -5px;
+  width: 1060px;
   margin: 0 auto;
   padding: 0 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+
+
+}
+
+.social {
+  list-style: none;
+  outline: 5px orange;
+  outline-offset: -5px;
 }
 
 .invitation {
